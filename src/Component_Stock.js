@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Plot from 'react-plotly.js';
 
 
-export default class Component_Stock extends React.Component {
+export default class Component_Stock extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,22 +17,22 @@ export default class Component_Stock extends React.Component {
         const pointerToThis = this;
         console.log(pointerToThis);
         const API_KEY = 'R8XI9MGNHMZ2WRZ3';
-        let StockSymbol='FB';
+        let StockSymbol = 'FB';
         let API_Call = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=${StockSymbol}&outputsize=compact&apikey=${API_KEY}`;
-        let stockChartXValuesFunction= [];
-        let stockChartYValuesFunction= [];
+        let stockChartXValuesFunction = [];
+        let stockChartYValuesFunction = [];
 
         fetch(API_Call)
             .then(
-                function(response){
+                function (response) {
                     return response.json();
                 }
             )
             .then(
-                function(data){
+                function (data) {
                     console.log(data);
 
-                    for(var key in data['Time Series(Daily)']){
+                    for (var key in data['Time Series(Daily)']) {
                         stockChartXValuesFunction.push(key);
                         stockChartYValuesFunction.push(data['Time Series (Daily)']
                         [key]['1. open']);
@@ -47,18 +47,19 @@ export default class Component_Stock extends React.Component {
     render() {
         return (
             <div>
-                 <Plot
-          data={[
-            {
-              x: this.state.stockChartXValues,
-              y: this.state.stockChartYValues,
-              type: 'scatter',
-              mode: 'lines+markers',
-              marker: {color: 'red'},
-            }
-          ]}
-          layout={{width: 720, height: 440, title: 'Stock Graph'}}
-        />
+                <Plot
+                    data={[
+                        {
+                            x: this.state.stockChartXValues,
+                            y: this.state.stockChartYValues,
+                            type: 'scatter',
+                            mode: 'lines+markers',
+                            marker: { color: 'Black' },
+                            
+                        }
+                    ]}
+                    layout={{ width: 720, height: 440, title: 'Stock Graph',}}
+                />
             </div>
         )
     }
