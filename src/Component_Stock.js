@@ -47,6 +47,8 @@ class Stock extends React.Component {
       )
   }
 
+  
+
 
   render() {
     return (
@@ -68,5 +70,6 @@ class Stock extends React.Component {
     )
   }
 }
+
 
 export default Stock;
