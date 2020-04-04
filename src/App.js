@@ -1,11 +1,13 @@
 import React from 'react';
-import Stock from './Stock';
 import './App.css';
+import MainView from './components/MainView';
+import Stock from './Stock';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       <Stock></Stock>
+      <MainView />
     </div>
   );
 }
