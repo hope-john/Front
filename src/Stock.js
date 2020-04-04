@@ -52,11 +52,12 @@ class Stock extends React.Component {
       <div>
         <br></br>
 
-        {/* header */}
+        {/* Title */}
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',}}>
         <h1>Stock Market Prediction</h1>
         </div>
         
+        {/* Graph */}
         <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',}}>
           <Plot
             data={[
