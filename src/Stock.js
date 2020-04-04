@@ -58,7 +58,7 @@ class Stock extends React.Component {
               y: this.state.stockChartYValues,
               type: 'scatter',
               mode: 'lines+markers',
-              marker: {color: 'Green'},
+              marker: {color: 'Lightblue'},
             }
           ]}
           layout={{width: 720, height: 440, title: 'SET 50 Graph'}}

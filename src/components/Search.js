@@ -77,7 +77,7 @@ class Search extends Component {
         <div className='input-group input-group-lg'>
           <input
             type='search'
-            placeholder='Search by typing the Symbol (E.g. AAPL, MSFT, LYFT...)'
+            placeholder='Search by typing the Symbol of Set 50 Stock'
             className='form-control input-group-lg searchBar'
             value={this.state.searchStock}
             onChange={this.handleChange}
