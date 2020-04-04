@@ -50,19 +50,29 @@ class Stock extends React.Component {
   render() {
     return (
       <div>
+        <br></br>
+
+        {/* header */}
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',}}>
         <h1>Stock Market Prediction</h1>
-        <Plot
-          data={[
-            {
-              x: this.state.stockChartXValues,
-              y: this.state.stockChartYValues,
-              type: 'scatter',
-              mode: 'lines+markers',
-              marker: {color: 'Green'},
-            }
-          ]}
-          layout={{width: 720, height: 440, title: 'SET 50 Graph'}}
-        />
+        </div>
+        
+        <div style={{display: 'flex',  justifyContent:'center', alignItems:'center',}}>
+          <Plot
+            data={[
+              {
+                x: this.state.stockChartXValues,
+                y: this.state.stockChartYValues,
+                type: 'scatter',
+                mode: 'lines+markers',
+                marker: {color: 'Green'}
+              }
+            ]}          
+            
+            layout={{width: 720, height: 440, title: 'SET 50 Graph'}}          
+            
+          />
+        </div>
       </div>
     )
   }
