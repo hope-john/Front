@@ -139,3 +139,16 @@
 .App {
   text-align: center;
 }
+
+/* For ShowStock */
+.Table {
+  border-spacing: 0px;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 1px 0 0 rgba(22, 29, 37, 0.05);
+}
+
+.Cell {
+  border: 1px solid #000000;
+  padding: 4px;
+  text-align: left;
+}

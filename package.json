@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@shopify/polaris": "^4.20.1",
     "babel-preset-react-app": "^7.0.0",
     "bootstrap": "^4.3.1",
     "plotly.js": "^1.53.0",
     "react": "^16.8.6",
+    "react-data-table-component": "^6.9.0",
     "react-dom": "^16.8.6",
     "react-plotly.js": "^2.4.0",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "styled-components": "^5.1.0"
   },
   "scripts": {
     "start": "react-scripts start",

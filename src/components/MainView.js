@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Search from './Search';
 import MyStocks from './MyStocks';
 import ajax from '../ajax';
+// import ShowStock from './ShowStock.js'
 
 class MainView extends Component {
   constructor(props) {
@@ -58,6 +59,8 @@ class MainView extends Component {
           data={this.state.data}
           myStocks={this.state.stockList}
         />
+
+        {/* <ShowStock></ShowStock> */}
       </div>
     );
   }

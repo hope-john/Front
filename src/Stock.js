@@ -1,5 +1,10 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
+// import ShowStock from './src/ShowStock.js';
+// import {
+//   Card, CardImg, CardText, CardBody,
+//   CardTitle, CardSubtitle, Button
+// } from 'reactstrap';
 
 class Stock extends React.Component {
   constructor(props) {
@@ -63,6 +68,8 @@ class Stock extends React.Component {
           ]}
           layout={{width: 720, height: 440, title: 'SET 50 Graph'}}
         />
+
+        {/* <ShowStock></ShowStock>         */}
       </div>
     )
   }
