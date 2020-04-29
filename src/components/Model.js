@@ -1,6 +1,6 @@
-async function trainModel(inputs, outputs, trainingsize, window_size, n_epochs, learning_rate, n_layers, callback){
+async function trainModel(inputs , outputs, trainingsize=70, window_size = 50, n_epochs=10, learning_rate=0.1, n_layers=4, callback){
 
-    const input_layer_shape  = window_size = 50;
+    const input_layer_shape  = window_size ;
     const input_layer_neurons = 100;
   
     const rnn_input_layer_features = 10;
@@ -15,7 +15,7 @@ async function trainModel(inputs, outputs, trainingsize, window_size, n_epochs, 
     const output_layer_neurons = 1;
   
     const model = tf.sequential();
-    const trainingsize = 70;
+    
   
     let X = inputs.slice(0, Math.floor(trainingsize / 100 * inputs.length));
     let Y = outputs.slice(0, Math.floor(trainingsize / 100 * outputs.length));
@@ -25,11 +25,7 @@ async function trainModel(inputs, outputs, trainingsize, window_size, n_epochs, 
   
     model.add(tf.layers.dense({units: input_layer_neurons, inputShape: [input_layer_shape]}));
     model.add(tf.layers.reshape({targetShape: rnn_input_shape}));
-
-    const n_layers = 4;
-    const n_epochs = 10;
-    const  learning_rate= 0.01;
-
+    
   
     let lstm_cells = [];
     for (let index = 0; index < n_layers ; index++) {
