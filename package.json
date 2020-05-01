@@ -11,6 +11,7 @@
     "react-data-table-component": "^6.9.0",
     "react-dom": "^16.8.6",
     "react-plotly.js": "^2.4.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.0.1",
     "styled-components": "^5.1.0"
   },

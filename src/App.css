@@ -152,3 +152,19 @@
   padding: 4px;
   text-align: left;
 }
+
+.front {
+text-align: left;
+margin-bottom: 2rem;
+margin-top: 2rem;
+margin-left: 4rem;
+}
+
+.preBut{
+margin-left: 0.5cm;
+}
+
+.Pic1{
+  width: 90%;
+  margin-left: 1.5cm;
+}
