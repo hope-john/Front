@@ -12,6 +12,12 @@ function App() {
       <Link to="/Result"><button className = 'preBut'>
               Predict Result
             </button>
+            
+            </Link>
+            <Link to="/Top10"><button className = 'preBut'>
+              Top 5 In SET 50
+            </button>
+            
             </Link>
     </div>
   );
