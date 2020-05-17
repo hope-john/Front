@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Result from "./components/Result";
 import Top10 from "./components/Top10";
 
+
 const rootElement = document.getElementById("root");
     ReactDOM.render(
       <BrowserRouter>
@@ -17,6 +18,17 @@ const rootElement = document.getElementById("root");
         <Route exact path="/" component={App} />
         <Route path="/Result" component={Result} />
         <Route path="/Top10" component={Top10}/>
+        <Route path="/Broker" component={() => {
+    global.window && (global.window.location.href = 'https://rabbitfinance.com/other/sbito');
+    return null;
+    }}
+/>
+<Route path="/News" component={() => {
+    global.window && (global.window.location.href = 'https://www.kaohoon.com');
+    return null;
+    }}
+/>
+
       </Switch>
       </BrowserRouter>,
       rootElement

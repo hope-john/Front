@@ -19,6 +19,16 @@ function App() {
             </button>
             
             </Link>
+            <Link to="/Broker"><button className = 'preBut'>
+              Contract Broker
+            </button>
+            
+            </Link>
+            <Link to="/News"><button className = 'preBut'>
+              Stock News
+            </button>
+            
+            </Link>
     </div>
   );
 }
