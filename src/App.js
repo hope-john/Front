@@ -20,7 +20,7 @@ function App() {
             
             </Link>
             <Link to="/Broker"><button className = 'preBut'>
-              Contract Broker
+              Contact Broker
             </button>
             
             </Link>
